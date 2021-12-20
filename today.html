@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Untitled Document</title>
+</head>
+<body>
+	<style>
+		.day {
+			border-radius: 50px;
+			padding: 10px;
+			background: #45BFC5;
+			color: #FFF733;
+			font-size: 25px;
+			text-align: center;
+			width: 500px;
+			font-weight: bold;
+			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			margin: 5% auto;
+		}
+	</style>
+	<div class="day">
+	<p id="day"></p>
+	<p id="show"></p>
+		</div>
+	<script>
+   	 const d = new Date();
+     let day = d.getDay() 
+	 let show;
+		switch (day){
+			case 0:
+			day = "Sunday";
+			show = "I wish you good Sunday";
+			break;	
+		    case 1:
+			day = "Monday";
+			show = "I wish you good Monday";
+			break;	
+		    case 2:
+			day = "Tuesday";
+			show = "I wish you good Tuesday";
+			break;	
+			case 3:
+			day = "Wednesday";
+			show = "I wish you good Wednesday";
+			break;	
+			case 4:
+			day = "Thursday";
+			show = "I wish you good Thursday";
+			break;	
+			case 5:
+			day = "Friday";
+			show = "I wish you good Friday";
+			break;	
+			case 6:
+			day = "Saturday";
+			show = "I wish you good Saturday";
+			break;	
+			default:
+			day ="not found";
+			show ="not found";
+				break;
+				   }
+		document.getElementById("day").innerHTML="Today is "+ day;
+		document.getElementById("show").innerHTML= show;
+	</script>
+</body>
+</html>
